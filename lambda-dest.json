@@ -1,0 +1,13 @@
+{
+    "FunctionName": "my-function",
+    "MaximumRetryAttempts": 0,
+    "MaximumEventAgeInSeconds": 99,
+    "DestinationConfig": {
+        "OnSuccess": {
+            "Destination": "arn:aws:sqs:us-east-2:123456789012:destination"
+        },
+        "OnFailure": {
+            "Destination": "arn:aws:sqs:us-east-2:123456789012:destination"
+        }
+    }
+}
